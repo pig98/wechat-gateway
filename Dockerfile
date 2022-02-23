@@ -4,4 +4,4 @@ WORKDIR /root/wechat-gateway
 
 EXPOSE 7001
 
-CMD npm run start
+CMD npm run dev
