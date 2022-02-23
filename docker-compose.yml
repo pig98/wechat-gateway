@@ -1,0 +1,16 @@
+version: 3
+services:
+  wechat-gateway:
+    build:
+      context: .
+    hostname: wechat-gateway
+    container_name: wechat-gateway
+    network_mode: host
+    restart: always
+    logging:
+      driver: journald
+    volumes:
+      - /data/wechat-gateway:/root/wechat-gateway
+      - /data/logs/wechat-gateway:/root/logs/wechat-gateway
+      - "/etc/localtime:/etc/localtime:ro"
+
