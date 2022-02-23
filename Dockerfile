@@ -1,6 +1,6 @@
 FROM node:14-alpine
 
-WORKDIR /root/alert-gateway
+WORKDIR /root/wechat-gateway
 
 EXPOSE 7001
 
