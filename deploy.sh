@@ -42,16 +42,16 @@ case "$1" in
 	up
 ;;
 "down")
-	init
+	down
 ;;
 "rm")
-	up
+	rm
 ;;
 "build")
-	init
+	build
 ;;
 "rmall")
-	init
+	rmall
 ;;
 *)
 	echo "Error input."
