@@ -9,6 +9,7 @@ services:
       driver: journald
     volumes:
       - /data/nginx/conf:/usr/local/openresty/nginx/conf
+      - /data/nginx/cert:/usr/local/openresty/nginx/cert
       - /data/nginx/dist:/root/dist
       - /data/logs/nginx/:/var/log/nginx/
       - "/etc/localtime:/etc/localtime:ro"
