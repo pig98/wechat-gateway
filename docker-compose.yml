@@ -8,7 +8,8 @@ services:
     logging:
       driver: journald
     volumes:
-      - /data/nginx/conf:/wechat-gateway/conf
+      - /data/nginx/nginx.conf:/usr/local/openresty/nginx/conf/nginx.conf
+      - /data/nginx/conf.d:/wechat-gateway/conf.d
       - /data/nginx/cert:/wechat-gateway/cert
       - /data/nginx/dist:/wechat-gateway/dist
       - /data/logs/nginx/:/var/log/nginx/
