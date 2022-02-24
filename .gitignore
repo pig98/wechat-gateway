@@ -12,3 +12,4 @@ run/
 *.un~
 typings/
 .nyc_output/
+wechat-gateway.tar.gz
