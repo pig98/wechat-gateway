@@ -31,7 +31,7 @@ function build(){
 }
 
 function rma(){
-	rm -rf /data/wechat-gateway
+	rm -rf /data/nginx
 }
 
 case "$1" in
