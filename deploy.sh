@@ -22,7 +22,7 @@ function down(){
 	docker-compose down
 }
 
-function rm(){
+function rmaaa(){
 	docker-compose rm -fvs
 }
 
@@ -30,8 +30,8 @@ function build(){
 	docker-compose build
 }
 
-function rmall(){
-	rm -r /data/wechat-gateway
+function rma(){
+	rm -rf /data/wechat-gateway
 }
 
 case "$1" in
@@ -45,13 +45,13 @@ case "$1" in
 	down
 ;;
 "rm")
-	rm
+	rmaaa
 ;;
 "build")
 	build
 ;;
-"rmall")
-	rmall
+"rma")
+	rma
 ;;
 *)
 	echo "Error input."
